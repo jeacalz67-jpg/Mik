@@ -172,4 +172,7 @@ async def test(ctx):
     await ctx.send("IT WORKS 💖")
 
 # ================= RUN =================
-bot.run("token")
+import os
+
+token = os.getenv("TOKEN")
+bot.run(token)
